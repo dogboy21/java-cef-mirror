@@ -19,8 +19,8 @@ Java_org_cef_callback_CefQueryCallback_1N_N_1Success(JNIEnv* env,
   callback->Success(GetJNIString(env, response));
 
   // Clear the reference added in ClientHandler::OnQuery.
-  SetCefForJNIObject<CefMessageRouterBrowserSide::Callback>(env, obj, NULL,
-                                                            "CefQueryCallback");
+  /*SetCefForJNIObject<CefMessageRouterBrowserSide::Callback>(env, obj, NULL,
+                                                            "CefQueryCallback");*/
 }
 
 JNIEXPORT void JNICALL
